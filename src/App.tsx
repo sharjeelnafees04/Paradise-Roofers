@@ -28,41 +28,47 @@ import RoofCoating from "./pages/services/RoofCoating";
 
 const queryClient = new QueryClient();
 
+import { HelmetProvider } from 'react-helmet-async';
+import RedirectHandler from './components/routing/RedirectHandler';
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
+    <HelmetProvider>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <RedirectHandler />
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
 
-          {/* Service Routes */}
-          <Route path="/services/installation" element={<RoofInstallation />} />
-          <Route path="/services/inspection" element={<RoofInspection />} />
-          <Route path="/services/repair" element={<RoofRepair />} />
-          <Route path="/services/replacement" element={<RoofReplacement />} />
-          <Route path="/services/fascia" element={<FasciaRepair />} />
-          <Route path="/services/gutters" element={<GuttersRepair />} />
-          <Route path="/services/soffit" element={<SoffitRepair />} />
-          <Route path="/services/attic-insulation" element={<AtticInsulation />} />
-          <Route path="/services/interior-renos" element={<InteriorRenos />} />
-          <Route path="/services/residential" element={<ResidentialRoofing />} />
-          <Route path="/services/commercial" element={<CommercialRoofing />} />
-          <Route path="/services/coating" element={<RoofCoating />} />
+            {/* Service Routes */}
+            <Route path="/services/installation" element={<RoofInstallation />} />
+            <Route path="/services/inspection" element={<RoofInspection />} />
+            <Route path="/services/repair" element={<RoofRepair />} />
+            <Route path="/services/replacement" element={<RoofReplacement />} />
+            <Route path="/services/fascia" element={<FasciaRepair />} />
+            <Route path="/services/gutters" element={<GuttersRepair />} />
+            <Route path="/services/soffit" element={<SoffitRepair />} />
+            <Route path="/services/attic-insulation" element={<AtticInsulation />} />
+            <Route path="/services/interior-renos" element={<InteriorRenos />} />
+            <Route path="/services/residential" element={<ResidentialRoofing />} />
+            <Route path="/services/commercial" element={<CommercialRoofing />} />
+            <Route path="/services/coating" element={<RoofCoating />} />
 
-          <Route path="/services/:slug" element={<Services />} />
+            <Route path="/services/:slug" element={<Services />} />
 
-          <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<Contact />} />
 
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </HelmetProvider>
   </QueryClientProvider>
 );
 

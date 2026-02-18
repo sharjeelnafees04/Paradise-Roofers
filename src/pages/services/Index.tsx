@@ -132,9 +132,12 @@ const services = [
   },
 ];
 
+import PageSEO from "@/components/seo/PageSEO";
+
 export default function Services() {
   return (
     <Layout>
+      <PageSEO slug="services" />
       {/* Hero */}
       <section className="bg-background pt-20 pb-10">
         <div className="container">

@@ -7,9 +7,12 @@ import completedRoof from "@/assets/completed-roof.jpg";
 import metalRoof from "@/assets/metal-roof.jpg";
 import roofingBanner from "@/assets/roofers-banner.jpg";
 
+import PageSEO from "@/components/seo/PageSEO";
+
 export default function RoofInspection() {
     return (
         <Layout>
+            <PageSEO slug="inspection" />
             {/* Hero Text Section */}
             <section className="pt-20 pb-10 bg-background">
                 <div className="container max-w-6xl">
