@@ -12,14 +12,14 @@ import ReviewsPreview from "@/components/sections/ReviewsPreview";
 import RoofingTypesPreview from "@/components/sections/RoofingTypesPreview";
 import roofInspectionImg from "@/assets/Home_page/FREERoofDroneInspectionTorontoGTAHomeowners.webp";
 import roofRepairImg from "@/assets/Home_page/Roof_repair_image.png";
-import roofInstallationImg from "@/assets/Home_page/Roof_INstallation.png";
-import roofReplacementImg from "@/assets/Home_page/CompleteRoofReplacementinToront0GTA.webp";
+import roofInstallationImg from "@/assets/Home_page/Roof_INstallation2.png";
+import roofReplacementImg from "@/assets/Home_page/Roof_Replacement_New.png";
 import roofCoatingImg from "@/assets/roof-coating.jpg";
 import gutterRepairImg from "@/assets/Home_page/Gutter_Repair.webp";
 import residentialRoofingImg from "@/assets/Home_page/ResidentialRoofingSolutions.webp";
 import commercialRoofingImg from "@/assets/Home_page/CommercialServicesCommercialFlatRoofingSystemsToronto.webp";
-import soffitRepairImg from "@/assets/Home_page/CompleteSoffitRepairReplacementinTorontoGTA.webp";
-import fasciaRepairImg from "@/assets/Home_page/FasciaRepairReplacementinTorontoGTA.webp";
+import soffitRepairImg from "@/assets/Home_page/Soffit_Repair_New.png";
+import fasciaRepairImg from "@/assets/Home_page/Fascia_Repair_New.png";
 import atticInsulationImg from "@/assets/Home_page/AtticInsulationTorontoGTA.webp";
 import interiorRenosImg from "@/assets/Home_page/CompleteInteriorRenovationsinTorontoGTA.webp";
 
@@ -47,12 +47,6 @@ const services = [
     description: "Remove old roofs, install durable upgrades. Residential and commercial specialists.",
     image: roofReplacementImg,
     href: "/services/replacement",
-  },
-  {
-    title: "Roof Coating",
-    description: "Silicone roof coatings extend roof life 15-20 years, save 50% vs replacement.",
-    image: roofCoatingImg,
-    href: "/services/coating",
   },
   {
     title: "Residential Roofing",

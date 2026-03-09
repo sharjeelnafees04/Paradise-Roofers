@@ -2,7 +2,7 @@ import Layout from "@/components/layout/Layout";
 import ContactForm from "@/components/sections/ContactForm";
 import { Phone, ArrowRight, Shield, Award, Star, MapPin, Home, Hammer, Trash2, Layers, Umbrella, DollarSign, Calendar, CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
-import roofReplacement from "@/assets/Home_page/CompleteRoofReplacementinToront0GTA.webp";
+import roofReplacement from "@/assets/Home_page/Roof_Replacement_New.png";
 
 export default function RoofReplacement() {
     return (

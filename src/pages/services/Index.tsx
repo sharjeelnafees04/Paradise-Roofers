@@ -7,10 +7,10 @@ import { ArrowRight, Calendar, Hammer, Home, PaintBucket, ShieldCheck, Building2
 import roofInspectionImg from "@/assets/Home_page/FREERoofDroneInspectionTorontoGTAHomeowners.webp";
 import roofInstallationImg from "@/assets/Home_page/ProfessionalRoofInstallationinTorontoTheGTA.webp";
 import roofRepairImg from "@/assets/Home_page/RoofRepairServices.webp";
-import roofReplacementImg from "@/assets/Home_page/CompleteRoofReplacementinToront0GTA.webp";
-import fasciaRepairImg from "@/assets/Home_page/FasciaRepairReplacementinTorontoGTA.webp";
+import roofReplacementImg from "@/assets/Home_page/Roof_Replacement_New.png";
+import fasciaRepairImg from "@/assets/Home_page/Fascia_Repair_New.png";
 import guttersRepairImg from "@/assets/Home_page/GutterRepairServices.webp";
-import soffitRepairImg from "@/assets/Home_page/Complete_Soffit_Repair__Replacement_in_Toronto__GTA.webp";
+import soffitRepairImg from "@/assets/Home_page/Soffit_Repair_New.png";
 import atticInsulationImg from "@/assets/Home_page/AtticInsulationTorontoGTA.webp";
 import interiorRenosImg from "@/assets/Home_page/CompleteInteriorRenovationsinTorontoGTA.webp";
 import residentialRoofingImg from "@/assets/Home_page/ResidentialRoofingSolutions.webp";

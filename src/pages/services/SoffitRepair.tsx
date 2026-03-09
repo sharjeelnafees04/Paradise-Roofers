@@ -2,7 +2,7 @@ import Layout from "@/components/layout/Layout";
 import ContactForm from "@/components/sections/ContactForm";
 import { Phone, ArrowRight, Shield, Award, MapPin, Wind, Thermometer, Construction, Fan, CheckCircle2, Home, LayoutDashboard, FileText, Zap, DollarSign, Layers } from "lucide-react";
 import { Link } from "react-router-dom";
-import soffitRepair from "@/assets/Home_page/Complete_Soffit_Repair__Replacement_in_Toronto__GTA.webp";
+import soffitRepair from "@/assets/Home_page/Soffit_Repair_New.png";
 
 export default function SoffitRepair() {
     return (
