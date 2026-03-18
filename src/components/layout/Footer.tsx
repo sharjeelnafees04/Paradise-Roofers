@@ -178,11 +178,7 @@ export default function Footer() {
               <h5 className="font-heading font-bold text-xs uppercase tracking-wider text-primary mb-2">
                 Email
               </h5>
-<<<<<<< HEAD
               <p className="text-sm text-primary">sales@phoenixestimating.com</p>
-=======
-              <p className="text-sm text-primary">info@paradiseroofers.com</p>
->>>>>>> 9b083ef581528c721c5b669a3357ac96f8aeb233
             </div>
             <div>
               <h5 className="font-heading font-bold text-xs uppercase tracking-wider text-primary mb-2">
