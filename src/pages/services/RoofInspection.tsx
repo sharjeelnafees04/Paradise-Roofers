@@ -4,9 +4,12 @@ import { Phone, ArrowRight, Shield, MapPin, Eye, FileText, Camera, CheckCircle2,
 import { Link } from "react-router-dom";
 import roofInspection from "@/assets/Home_page/FREERoofDroneInspectionTorontoGTAHomeowners.webp";
 
+import PageSEO from "@/components/seo/PageSEO";
+
 export default function RoofInspection() {
     return (
         <Layout>
+            <PageSEO slug="inspection" />
             {/* Hero Text Section */}
             <section className="pt-20 pb-10 bg-background">
                 <div className="container max-w-6xl">

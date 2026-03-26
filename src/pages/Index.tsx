@@ -125,11 +125,14 @@ const faqs = [
   },
 ];
 
+import PageSEO from "@/components/seo/PageSEO";
+
 export default function Index() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   return (
     <Layout>
+      <PageSEO slug="home" />
       {/* Hero Section with 3D Mouse-Tracking Effect */}
       <Hero3D />
 

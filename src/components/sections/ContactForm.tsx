@@ -1,7 +1,8 @@
+import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Clock } from "lucide-react";
 
 interface ContactFormProps {
@@ -11,6 +12,77 @@ interface ContactFormProps {
 export default function ContactForm({
   variant = "light"
 }: ContactFormProps) {
+  const { toast } = useToast();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+    plan: null as File | null
+  });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files && e.target.files[0]) {
+      setFormData(prev => ({ ...prev, plan: e.target.files![0] }));
+    }
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const data = new FormData();
+      data.append("name", formData.name);
+      data.append("email", formData.email);
+      data.append("phone", formData.phone);
+      data.append("message", formData.message);
+      data.append("website", "paradise-roofer");
+      if (formData.plan) {
+        data.append("plan", formData.plan);
+      }
+
+      const API_URL = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1"
+        ? "http://localhost:5000/api/contact"
+        : "https://constructionestimatingnewyork.com/api/contact";
+
+      const response = await fetch(API_URL, {
+        method: "POST",
+        body: data,
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Message Sent!",
+          description: "We'll get back to you within 24 hours.",
+        });
+        setFormData({ name: "", email: "", phone: "", message: "", plan: null });
+        (e.target as HTMLFormElement).reset();
+      } else {
+        toast({
+          title: "Error",
+          description: "Something went wrong. Please try again.",
+          variant: "destructive"
+        });
+      }
+    } catch (error) {
+      console.error("Submission error:", error);
+      toast({
+        title: "Error",
+        description: "Failed to connect to the server.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   const bgClass = variant === "dark" ? "bg-foreground" : "bg-background";
   const textClass = variant === "dark" ? "text-background" : "text-foreground";
 
@@ -29,103 +101,73 @@ export default function ContactForm({
             </p>
           </div>
 
-          {/* Right Form */}
           <div className="bg-white p-8 md:p-10 shadow-2xl rounded-sm border-t-4 border-[#FF9C45]">
-            <form className="space-y-6">
-              {/* Name */}
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-wider mb-2">Name*</label>
-                <Input
-                  placeholder="Jane Smith"
-                  className="bg-gray-100/50 border-0 focus-visible:ring-1 focus-visible:ring-[#FF9C45] h-12 rounded-none placeholder:text-muted-foreground/50"
-                />
-              </div>
-
-              {/* Email & Phone */}
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-xs font-bold uppercase tracking-wider mb-2">Email*</label>
+                  <label className="block text-xs font-bold uppercase tracking-wider mb-2">Name*</label>
                   <Input
-                    type="email"
-                    placeholder="jane@framer.com"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    placeholder="Jane Smith"
+                    required
                     className="bg-gray-100/50 border-0 focus-visible:ring-1 focus-visible:ring-[#FF9C45] h-12 rounded-none placeholder:text-muted-foreground/50"
                   />
                 </div>
                 <div>
                   <label className="block text-xs font-bold uppercase tracking-wider mb-2">Phone*</label>
                   <Input
+                    name="phone"
                     type="tel"
+                    value={formData.phone}
+                    onChange={handleChange}
                     placeholder="(123) 456-7890"
+                    required
                     className="bg-gray-100/50 border-0 focus-visible:ring-1 focus-visible:ring-[#FF9C45] h-12 rounded-none placeholder:text-muted-foreground/50"
                   />
                 </div>
               </div>
 
-              {/* Property & Service */}
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-xs font-bold uppercase tracking-wider mb-2">Property Type*</label>
-                  <Select>
-                    <SelectTrigger className="bg-gray-100/50 border-0 focus:ring-1 focus:ring-[#FF9C45] h-12 rounded-none">
-                      <SelectValue placeholder="Residential" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="residential">Residential</SelectItem>
-                      <SelectItem value="commercial">Commercial</SelectItem>
-                      <SelectItem value="industrial">Industrial</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-                <div>
-                  <label className="block text-xs font-bold uppercase tracking-wider mb-2">Service Type*</label>
-                  <Select>
-                    <SelectTrigger className="bg-gray-100/50 border-0 focus:ring-1 focus:ring-[#FF9C45] h-12 rounded-none">
-                      <SelectValue placeholder="Roof Installation" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="installation">Roof Installation</SelectItem>
-                      <SelectItem value="repair">Roof Repair</SelectItem>
-                      <SelectItem value="replacement">Roof Replacement</SelectItem>
-                      <SelectItem value="inspection">Roof Inspection</SelectItem>
-                      <SelectItem value="coating">Roof Coating</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-              </div>
-
-              {/* Zip & Time */}
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-xs font-bold uppercase tracking-wider mb-2">Zip Code*</label>
-                  <Input
-                    placeholder="M5V 2T6"
-                    className="bg-gray-100/50 border-0 focus-visible:ring-1 focus-visible:ring-[#FF9C45] h-12 rounded-none placeholder:text-muted-foreground/50"
-                  />
-                </div>
-                <div>
-                  <label className="block text-xs font-bold uppercase tracking-wider mb-2">Best Time to Call</label>
-                  <div className="relative">
-                    <Input
-                      type="time"
-                      className="bg-gray-100/50 border-0 focus-visible:ring-1 focus-visible:ring-[#FF9C45] h-12 rounded-none block w-full"
-                    />
-                    <Clock className="absolute right-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground pointer-events-none" />
-                  </div>
-                </div>
-              </div>
-
-              {/* Message */}
               <div>
-                <label className="block text-xs font-bold uppercase tracking-wider mb-2">Message</label>
+                <label className="block text-xs font-bold uppercase tracking-wider mb-2">Email*</label>
+                <Input
+                  name="email"
+                  type="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="jane@framer.com"
+                  required
+                  className="bg-gray-100/50 border-0 focus-visible:ring-1 focus-visible:ring-[#FF9C45] h-12 rounded-none placeholder:text-muted-foreground/50"
+                />
+              </div>
+
+              <div>
+                <label className="block text-xs font-bold uppercase tracking-wider mb-2">Upload Plan (Optional)</label>
+                <Input
+                  name="plan"
+                  type="file"
+                  onChange={handleFileChange}
+                  accept=".pdf,.dwg,.jpg,.jpeg,.png,.zip"
+                  className="bg-gray-100/50 border-2 border-dashed border-[#FF9C45]/20 focus-visible:ring-1 focus-visible:ring-[#FF9C45] h-16 rounded-none placeholder:text-muted-foreground/50"
+                />
+              </div>
+
+              <div>
+                <label className="block text-xs font-bold uppercase tracking-wider mb-2">Message*</label>
                 <Textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
                   placeholder="Write your detailed message here"
                   rows={4}
+                  required
                   className="bg-gray-100/50 border-0 focus-visible:ring-1 focus-visible:ring-[#FF9C45] rounded-none resize-none placeholder:text-muted-foreground/50 p-4"
                 />
               </div>
 
-              <Button className="w-full bg-[#FF9C45] text-black hover:bg-[#ff8a22] uppercase font-bold text-sm tracking-widest py-8 rounded-none mt-4 transition-all hover:scale-[1.01]">
-                Request Free Estimate
+              <Button type="submit" disabled={isSubmitting} className="w-full bg-[#FF9C45] text-black hover:bg-[#ff8a22] uppercase font-bold text-sm tracking-widest py-8 rounded-none mt-4 transition-all hover:scale-[1.01]">
+                {isSubmitting ? "Sending..." : "Request Free Estimate"}
               </Button>
             </form>
           </div>

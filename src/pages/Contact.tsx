@@ -6,12 +6,12 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Hotlines",
-    items: ["(866) 123-4567", "(866) 234-5678"],
+    items: ["+1 (437) 564-2790"],
   },
   {
     icon: Mail,
     label: "Email",
-    items: ["sales@Paradiseroofers.com"],
+    items: ["[sales@paradiseroofers.com]"],
   },
   {
     icon: MapPin,
