@@ -46,7 +46,7 @@ export default function RoofInspection() {
                                 </Link>
                                 <a href="tel:+16475550123" className="w-full sm:w-auto bg-muted text-foreground px-8 py-4 font-bold uppercase tracking-wide hover:bg-muted/80 transition-colors flex items-center justify-center gap-4">
                                     <Phone className="h-5 w-5 text-[#FF9C45]" />
-                                    +1 (647) 555-0123 <ArrowRight className="h-4 w-4" />
+                                    +1 437-564-2790 <ArrowRight className="h-4 w-4" />
                                 </a>
                             </div>
                         </div>
@@ -178,43 +178,43 @@ export default function RoofInspection() {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {[
-                            { 
-                                title: "Bald Shingle Spots", 
+                            {
+                                title: "Bald Shingle Spots",
                                 desc: "Granule loss means 3-5 years left before leaks start.",
                                 icon: CloudRain
                             },
-                            { 
-                                title: "No Ice Shield at Eaves", 
+                            {
+                                title: "No Ice Shield at Eaves",
                                 desc: "Winter flooding guaranteed without proper protection.",
                                 icon: AlertTriangle
                             },
-                            { 
-                                title: "Cracked Valleys", 
+                            {
+                                title: "Cracked Valleys",
                                 desc: "Cause 40% of attic leaks but invisible from street.",
                                 icon: Wind
                             },
-                            { 
-                                title: "Bad Vents Flashing", 
+                            {
+                                title: "Bad Vents Flashing",
                                 desc: "Fails years before water shows inside house.",
                                 icon: Home
                             },
-                            { 
-                                title: "Soft Wet Spots", 
+                            {
+                                title: "Soft Wet Spots",
                                 desc: "Under shingles before they cave through ceiling.",
                                 icon: Zap
                             },
-                            { 
-                                title: "Tree Branches Rubbing", 
+                            {
+                                title: "Tree Branches Rubbing",
                                 desc: "Looks fine from ground but damages shingles.",
                                 icon: Wind
                             },
-                            { 
-                                title: "Blocked Soffit Vents", 
+                            {
+                                title: "Blocked Soffit Vents",
                                 desc: "Causing ice dams + early shingle death.",
                                 icon: Home
                             },
-                            { 
-                                title: "Tiny Hail Dents", 
+                            {
+                                title: "Tiny Hail Dents",
                                 desc: "That cancel your insurance coverage.",
                                 icon: AlertTriangle
                             }

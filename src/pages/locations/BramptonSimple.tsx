@@ -40,7 +40,7 @@ export default function BramptonSimple() {
                                 </Link>
                                 <a href="tel:+16475550123" className="w-full sm:w-auto bg-muted text-foreground px-8 py-4 font-bold uppercase tracking-wide hover:bg-muted/80 transition-colors flex items-center justify-center gap-4">
                                     <Phone className="h-5 w-5 text-[#FF9C45]" />
-                                    +1 (647) 555-0123 <ArrowRight className="h-4 w-4" />
+                                    +1 437-564-2790 <ArrowRight className="h-4 w-4" />
                                 </a>
                             </div>
                         </div>
@@ -74,7 +74,7 @@ export default function BramptonSimple() {
                                     </p>
                                 </div>
                             </div>
-                            
+
                             <ul className="space-y-3 mb-6 ml-2">
                                 <li className="flex items-center gap-2 text-sm">
                                     <div className="h-2 w-2 rounded-full bg-[#FF9C45]" />
@@ -118,7 +118,7 @@ export default function BramptonSimple() {
                                     </p>
                                 </div>
                             </div>
-                            
+
                             <ul className="space-y-3 mb-6 ml-2">
                                 <li className="flex items-center gap-2 text-sm">
                                     <div className="h-2 w-2 rounded-full bg-[#FF9C45]" />
@@ -158,21 +158,21 @@ export default function BramptonSimple() {
                     <h2 className="text-3xl md:text-4xl font-bold uppercase mb-12 text-center">FAQs</h2>
                     <div className="grid md:grid-cols-2 gap-6">
                         {[
-                            { 
-                                q: "How much you charge for Roof Inspection?", 
-                                a: "It's totally free of cost and through 4K Drone." 
+                            {
+                                q: "How much you charge for Roof Inspection?",
+                                a: "It's totally free of cost and through 4K Drone."
                             },
-                            { 
-                                q: "How often should I inspect my roof?", 
-                                a: "Twice a year—spring and fall are best. Or after major storms." 
+                            {
+                                q: "How often should I inspect my roof?",
+                                a: "Twice a year—spring and fall are best. Or after major storms."
                             },
-                            { 
-                                q: "What's the difference between inspection and maintenance?", 
-                                a: "Inspections find issues. Maintenance fixes the little stuff on the spot." 
+                            {
+                                q: "What's the difference between inspection and maintenance?",
+                                a: "Inspections find issues. Maintenance fixes the little stuff on the spot."
                             },
-                            { 
-                                q: "Can this extend my roof's life?", 
-                                a: "Absolutely—routine care can add 5–10 years or more." 
+                            {
+                                q: "Can this extend my roof's life?",
+                                a: "Absolutely—routine care can add 5–10 years or more."
                             }
                         ].map((faq, i) => (
                             <div key={i} className="bg-white p-6 rounded-xl border border-border shadow-sm">

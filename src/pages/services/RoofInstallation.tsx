@@ -47,7 +47,7 @@ export default function RoofInstallation() {
                                 </Link>
                                 <a href="tel:+1452456789" className="w-full sm:w-auto bg-muted text-foreground px-8 py-4 font-bold uppercase tracking-wide hover:bg-muted/80 transition-colors flex items-center justify-center gap-4">
                                     <Phone className="h-5 w-5 text-[#FF9C45]" />
-                                    +1 (647) 555-0123 <ArrowRight className="h-4 w-4" />
+                                    +1 437-564-2790 <ArrowRight className="h-4 w-4" />
                                 </a>
                             </div>
                         </div>
@@ -156,40 +156,40 @@ export default function RoofInstallation() {
                     <h2 className="text-3xl font-bold uppercase mb-12">Comprehensive Roof Installation Services We Offer</h2>
                     <p className="mb-12 text-muted-foreground">Our roof installation process goes far beyond simply laying new shingles. We provide complete exterior protection packages tailored for Toronto and GTA properties:</p>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                            {[
-                                {
-                                    title: "1. Free Roof Drone Inspection",
-                                    desc: "Every project starts with our complimentary drone inspection service. We capture 4K aerial footage of your entire roof surface, chimney flashing, skylights, vents, and valleys. This technology spots issues like cracked shingles, granule loss, soft spots, and ice dam formation risks before we even climb ladders. You'll receive a detailed digital report with photos, repair recommendations, and accurate square footage measurements for precise quoting."
-                                },
-                                {
-                                    title: "2. Roof Repair Before Replacement",
-                                    desc: "Not every roof needs full replacement. Our experts assess if strategic repairs can extend your roof's life 5-10 years. Common Toronto roof repairs include: Leak detection and sealant application around penetrations, Shingle replacement in wind-damaged areas, Ridge vent and soffit ventilation improvements, Temporary ice dam mitigation for emergency situations"
-                                },
-                                {
-                                    title: "3. Complete Roof Replacement",
-                                    desc: "For roofs over 15 years old or showing multiple failure signs (curling shingles, valley cracks, interior leaks), full replacement delivers best value. We handle complete tear-off to the deck, ice & water shield installation, synthetic underlayment, and premium shingle application with proper nailing patterns for 160 km/h wind resistance."
-                                },
-                                {
-                                    title: "4. Fascia Repair & Replacement",
-                                    desc: "Rotten fascia boards compromise gutter performance and allow pest entry. We replace damaged fascia with pressure-treated wood or durable PVC boards, properly flashed to prevent future rot common in humid Toronto summers."
-                                },
-                                {
-                                    title: "5. Soffit Repair & Replacement",
-                                    desc: "Continuous soffit ventilation prevents attic moisture build up and ice dams. We install aluminium or vinyl soffits with built-in vents providing 50% net free area for proper attic breathing."
-                                },
-                                {
-                                    title: "6. Gutters Repair & Replacement",
-                                    desc: "Seamless aluminium gutters in 5\" or 6\" profiles with leaf guards. Properly sloped systems handle Toronto's heavy spring melt and summer downpours without overflow."
-                                },
-                                {
-                                    title: "7. Attic Insulation Services",
-                                    desc: "Insufficient insulation causes ice dams and high hydro bills. We install R50 blown-in cellulose or fiberglass, properly baffling intake vents to maintain airflow while maximizing energy efficiency."
-                                },
-                                {
-                                    title: "8. All Interior Renovations",
-                                    desc: "Roof leaks damages, ceilings, walls, and insulation. Our team handles complete interior restoration including drywall replacement, tape and mud, premium painting, and vapor barrier repairs so your home looks better than before the leak."
-                                }
-                            ].map((service, i) => (
+                        {[
+                            {
+                                title: "1. Free Roof Drone Inspection",
+                                desc: "Every project starts with our complimentary drone inspection service. We capture 4K aerial footage of your entire roof surface, chimney flashing, skylights, vents, and valleys. This technology spots issues like cracked shingles, granule loss, soft spots, and ice dam formation risks before we even climb ladders. You'll receive a detailed digital report with photos, repair recommendations, and accurate square footage measurements for precise quoting."
+                            },
+                            {
+                                title: "2. Roof Repair Before Replacement",
+                                desc: "Not every roof needs full replacement. Our experts assess if strategic repairs can extend your roof's life 5-10 years. Common Toronto roof repairs include: Leak detection and sealant application around penetrations, Shingle replacement in wind-damaged areas, Ridge vent and soffit ventilation improvements, Temporary ice dam mitigation for emergency situations"
+                            },
+                            {
+                                title: "3. Complete Roof Replacement",
+                                desc: "For roofs over 15 years old or showing multiple failure signs (curling shingles, valley cracks, interior leaks), full replacement delivers best value. We handle complete tear-off to the deck, ice & water shield installation, synthetic underlayment, and premium shingle application with proper nailing patterns for 160 km/h wind resistance."
+                            },
+                            {
+                                title: "4. Fascia Repair & Replacement",
+                                desc: "Rotten fascia boards compromise gutter performance and allow pest entry. We replace damaged fascia with pressure-treated wood or durable PVC boards, properly flashed to prevent future rot common in humid Toronto summers."
+                            },
+                            {
+                                title: "5. Soffit Repair & Replacement",
+                                desc: "Continuous soffit ventilation prevents attic moisture build up and ice dams. We install aluminium or vinyl soffits with built-in vents providing 50% net free area for proper attic breathing."
+                            },
+                            {
+                                title: "6. Gutters Repair & Replacement",
+                                desc: "Seamless aluminium gutters in 5\" or 6\" profiles with leaf guards. Properly sloped systems handle Toronto's heavy spring melt and summer downpours without overflow."
+                            },
+                            {
+                                title: "7. Attic Insulation Services",
+                                desc: "Insufficient insulation causes ice dams and high hydro bills. We install R50 blown-in cellulose or fiberglass, properly baffling intake vents to maintain airflow while maximizing energy efficiency."
+                            },
+                            {
+                                title: "8. All Interior Renovations",
+                                desc: "Roof leaks damages, ceilings, walls, and insulation. Our team handles complete interior restoration including drywall replacement, tape and mud, premium painting, and vapor barrier repairs so your home looks better than before the leak."
+                            }
+                        ].map((service, i) => (
                             <div key={i} className="bg-muted/30 p-6 rounded-lg border border-border hover:border-[#FF9C45] transition-colors">
                                 <h3 className="font-bold text-lg mb-3">{service.title}</h3>
                                 <p className="text-sm text-muted-foreground">{service.desc}</p>

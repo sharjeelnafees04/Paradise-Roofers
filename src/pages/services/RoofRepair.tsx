@@ -46,7 +46,7 @@ export default function RoofRepair() {
                                 </Link>
                                 <a href="tel:+16475550123" className="w-full sm:w-auto bg-muted text-foreground px-8 py-4 font-bold uppercase tracking-wide hover:bg-muted/80 transition-colors flex items-center justify-center gap-4">
                                     <Phone className="h-5 w-5 text-[#FF9C45]" />
-                                    +1 (647) 555-0123 <ArrowRight className="h-4 w-4" />
+                                    +1 437-564-2790 <ArrowRight className="h-4 w-4" />
                                 </a>
                             </div>
                         </div>
@@ -176,9 +176,9 @@ export default function RoofRepair() {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {[
-                            { 
-                                title: "Free Roof Drone Inspection", 
-                                desc: "What Our Drones Find: Shingle granule loss patterns indicating UV damage, Soft spots signaling deck rot, Tree branch overhang risks, Ice dam formation zones, Flashing deterioration around chimneys/vents/skylights. What You Receive: 4K video tour, detailed PDF report, repair cost breakdown, insurance-ready documentation – all FREE" 
+                            {
+                                title: "Free Roof Drone Inspection",
+                                desc: "What Our Drones Find: Shingle granule loss patterns indicating UV damage, Soft spots signaling deck rot, Tree branch overhang risks, Ice dam formation zones, Flashing deterioration around chimneys/vents/skylights. What You Receive: 4K video tour, detailed PDF report, repair cost breakdown, insurance-ready documentation – all FREE"
                             },
                             { title: "Precision Leak Detection", desc: "Thermal imaging and moisture meters identify water migration and pinpoint entry points for permanent repair." },
                             { title: "Shingle Repair & Replacement", desc: "Wind damage fix with color-matched materials, granule loss repair, and ridge cap replacement." },

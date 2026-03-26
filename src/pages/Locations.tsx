@@ -5,18 +5,18 @@ import { Link } from "react-router-dom";
 import heroRoofing from "@/assets/hero-roofing.jpg";
 
 const locations = [
-  { name: "Brampton", href: "/locations/brampton", description: "Trusted roofing services for Brampton's growing communities" },
-  { name: "Mississauga", href: "/locations/mississauga", description: "Premier roofing contractors serving Mississauga and GTA" },
-  { name: "Milton", href: "/locations/milton", description: "Professional roofing services for Milton's diverse neighborhoods" },
-  { name: "Oakville", href: "/locations/oakville", description: "Premium roofing services for Oakville's distinguished properties" },
-  { name: "Etobicoke", href: "/locations/etobicoke", description: "Expert roofing solutions for Etobicoke's urban communities" },
-  { name: "Scarborough", href: "/locations/scarborough", description: "Reliable roofing services across all Scarborough districts" },
-  { name: "Vaughan", href: "/locations/vaughan", description: "Luxury roofing services for Vaughan's prestigious communities" },
-  { name: "Markham", href: "/locations/markham", description: "Quality roofing solutions for Markham's heritage and modern homes" },
-  { name: "Richmond Hill", href: "/locations/richmond-hill", description: "Premium roofing services for Richmond Hill's luxury estates" },
-  { name: "Aurora", href: "/locations/aurora", description: "Professional roofing services for Aurora's charming communities" },
-  { name: "Burlington", href: "/locations/burlington", description: "Specialized lakefront roofing services for Burlington" },
-  { name: "Ajax", href: "/locations/ajax", description: "Expert roofing services for Ajax's lakefront and suburban areas" },
+    { name: "Brampton", href: "/locations/brampton", description: "Trusted roofing services for Brampton's growing communities" },
+    { name: "Mississauga", href: "/locations/mississauga", description: "Premier roofing contractors serving Mississauga and GTA" },
+    { name: "Milton", href: "/locations/milton", description: "Professional roofing services for Milton's diverse neighborhoods" },
+    { name: "Oakville", href: "/locations/oakville", description: "Premium roofing services for Oakville's distinguished properties" },
+    { name: "Etobicoke", href: "/locations/etobicoke", description: "Expert roofing solutions for Etobicoke's urban communities" },
+    { name: "Scarborough", href: "/locations/scarborough", description: "Reliable roofing services across all Scarborough districts" },
+    { name: "Vaughan", href: "/locations/vaughan", description: "Luxury roofing services for Vaughan's prestigious communities" },
+    { name: "Markham", href: "/locations/markham", description: "Quality roofing solutions for Markham's heritage and modern homes" },
+    { name: "Richmond Hill", href: "/locations/richmond-hill", description: "Premium roofing services for Richmond Hill's luxury estates" },
+    { name: "Aurora", href: "/locations/aurora", description: "Professional roofing services for Aurora's charming communities" },
+    { name: "Burlington", href: "/locations/burlington", description: "Specialized lakefront roofing services for Burlington" },
+    { name: "Ajax", href: "/locations/ajax", description: "Expert roofing services for Ajax's lakefront and suburban areas" },
 ];
 
 export default function Locations() {
@@ -58,7 +58,7 @@ export default function Locations() {
                                 </Link>
                                 <a href="tel:+16475550123" className="w-full sm:w-auto bg-muted text-foreground px-8 py-4 font-bold uppercase tracking-wide hover:bg-muted/80 transition-colors flex items-center justify-center gap-4">
                                     <Phone className="h-5 w-5 text-[#FF9C45]" />
-                                    +1 (647) 555-0123 <ArrowRight className="h-4 w-4" />
+                                    +1 437-564-2790 <ArrowRight className="h-4 w-4" />
                                 </a>
                             </div>
                         </div>
@@ -228,8 +228,8 @@ export default function Locations() {
                                 Contact Paradise Roofers
                             </h3>
                             <div className="space-y-2 text-sm text-muted-foreground">
-                                <p><strong>Phone:</strong> (647) 555-0123</p>
-                                <p><strong>Email:</strong> info@paradiseroofers.com</p>
+                                <p><strong>Phone:</strong> 437-564-2790</p>
+                                <p><strong>Email:</strong> sales@Paradiseroofers.com</p>
                                 <p><strong>Emergency:</strong> Available 24/7</p>
                                 <p><strong>Free Estimates:</strong> Same day scheduling</p>
                             </div>

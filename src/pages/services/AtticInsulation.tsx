@@ -43,7 +43,7 @@ export default function AtticInsulation() {
                                 </Link>
                                 <a href="tel:+16475550123" className="w-full sm:w-auto bg-muted text-foreground px-8 py-4 font-bold uppercase tracking-wide hover:bg-muted/80 transition-colors flex items-center justify-center gap-4">
                                     <Phone className="h-5 w-5 text-[#FF9C45]" />
-                                    +1 (647) 555-0123 <ArrowRight className="h-4 w-4" />
+                                    +1 437-564-2790 <ArrowRight className="h-4 w-4" />
                                 </a>
                             </div>
                         </div>
@@ -281,7 +281,7 @@ export default function AtticInsulation() {
 
                     <div className="mt-8 bg-[#F9F9F9] p-6 rounded-xl border border-border">
                         <p className="text-sm text-muted-foreground">
-                            <strong>Calculations based on:</strong> Natural gas at $1.20/m³, electricity at $0.17/kWh (Toronto Hydro 2024 rates), 
+                            <strong>Calculations based on:</strong> Natural gas at $1.20/m³, electricity at $0.17/kWh (Toronto Hydro 2024 rates),
                             1,500 sq ft home, 2,200 heating degree days. Actual savings vary by home size, age, and usage patterns.
                         </p>
                     </div>

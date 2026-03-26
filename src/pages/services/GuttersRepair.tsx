@@ -45,7 +45,7 @@ export default function GuttersRepair() {
                                 </Link>
                                 <a href="tel:+16475550123" className="w-full sm:w-auto bg-muted text-foreground px-8 py-4 font-bold uppercase tracking-wide hover:bg-muted/80 transition-colors flex items-center justify-center gap-4">
                                     <Phone className="h-5 w-5 text-[#FF9C45]" />
-                                    +1 (647) 555-0123 <ArrowRight className="h-4 w-4" />
+                                    +1 437-564-2790 <ArrowRight className="h-4 w-4" />
                                 </a>
                             </div>
                         </div>
@@ -184,43 +184,43 @@ export default function GuttersRepair() {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {[
-                            { 
-                                title: "Free Professional Gutter Inspection", 
+                            {
+                                title: "Free Professional Gutter Inspection",
                                 desc: "Laser Technology Assessment: Slope verification, hidden seam leak detection, fascia rot analysis, downspout capacity verification, leaf guard compatibility evaluation. ($250 Value)",
                                 icon: FileText
                             },
-                            { 
-                                title: "Precision Eavestrough Repair Services", 
+                            {
+                                title: "Precision Eavestrough Repair Services",
                                 desc: "Individual leak repair with butyl rubber seam resealing (20-year durability), section replacement, end cap rebuild, downspout reconnection, hanger reinforcement.",
                                 icon: Wrench
                             },
-                            { 
-                                title: "24/7 Emergency Eavestrough Service", 
+                            {
+                                title: "24/7 Emergency Eavestrough Service",
                                 desc: "90-minute arrival Toronto core, 2-hour GTA. Temporary leak sealing, ice dam clearing, storm damage recovery, blue tarp protection.",
                                 icon: AlertTriangle
                             },
-                            { 
-                                title: "Complete Seamless Gutter Replacement", 
+                            {
+                                title: "Complete Seamless Gutter Replacement",
                                 desc: "Onsite custom fabrication with true 5\"/6\"/7\" seamless aluminum gutters, 20+ color options, hidden heavy-duty hangers, proper slope certification.",
                                 icon: Factory
                             },
-                            { 
-                                title: "Advanced Leaf Guard Protection Systems", 
+                            {
+                                title: "Advanced Leaf Guard Protection Systems",
                                 desc: "Micro-mesh screens (95% debris capture), reverse curve systems, heated gutter guards (-20°C rated), surface tension technology.",
                                 icon: Shield
                             },
-                            { 
-                                title: "Professional Downspout & Drainage", 
+                            {
+                                title: "Professional Downspout & Drainage",
                                 desc: "Color-matched aluminum 3x4\" residential, 4x5\" commercial profiles, foundation protection with 6+ ft extensions, catch basins, buried systems.",
                                 icon: ArrowDownToLine
                             },
-                            { 
-                                title: "Complete Fascia/Soffit/Gutter Integration", 
+                            {
+                                title: "Complete Fascia/Soffit/Gutter Integration",
                                 desc: "Rotten fascia replacement with PVC or aluminum, proper metal flashing, continuous soffit ventilation, seamless color harmony.",
                                 icon: Home
                             },
-                            { 
-                                title: "Ice Dam Prevention Package", 
+                            {
+                                title: "Ice Dam Prevention Package",
                                 desc: "Complete exterior water management system designed specifically for Toronto winters and extreme weather conditions.",
                                 icon: Snowflake
                             }

@@ -32,7 +32,7 @@ export default function RichmondHillRoofing() {
                                 </Link>
                                 <a href="tel:+16475550123" className="w-full sm:w-auto bg-muted text-foreground px-8 py-4 font-bold uppercase tracking-wide hover:bg-muted/80 transition-colors flex items-center justify-center gap-4">
                                     <Phone className="h-5 w-5 text-[#FF9C45]" />
-                                    +1 (647) 555-0123 <ArrowRight className="h-4 w-4" />
+                                    +1 437-564-2790 <ArrowRight className="h-4 w-4" />
                                 </a>
                             </div>
                         </div>
@@ -60,7 +60,7 @@ export default function RichmondHillRoofing() {
                         </div>
                     </div>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-                        {["Roof inspections & maintenance","Roof installation & replacement","Roof repairs & leak detection","Asphalt shingle roofing","Flat roofing systems","Emergency roof repairs","Eavestrough, soffit & fascia services"].map((service, i) => (
+                        {["Roof inspections & maintenance", "Roof installation & replacement", "Roof repairs & leak detection", "Asphalt shingle roofing", "Flat roofing systems", "Emergency roof repairs", "Eavestrough, soffit & fascia services"].map((service, i) => (
                             <div key={i} className="flex items-center gap-3 bg-white p-4 rounded-lg border border-border">
                                 <div className="h-2 w-2 rounded-full bg-[#FF9C45] shrink-0" />
                                 <span className="text-sm font-medium">{service}</span>
@@ -101,7 +101,7 @@ export default function RichmondHillRoofing() {
                 <div className="container max-w-6xl">
                     <h2 className="text-3xl md:text-4xl font-bold uppercase mb-8 text-center">⭐ Why Choose Paradise Roofers?</h2>
                     <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
-                        {["Experienced & skilled professionals","High-quality materials and workmanship","Honest pricing and clear communication","Fully insured and safety-focused","Local Richmond Hill service you can trust"].map((item, i) => (
+                        {["Experienced & skilled professionals", "High-quality materials and workmanship", "Honest pricing and clear communication", "Fully insured and safety-focused", "Local Richmond Hill service you can trust"].map((item, i) => (
                             <div key={i} className="bg-white p-6 rounded-xl border border-border text-center">
                                 <div className="h-3 w-3 rounded-full bg-[#FF9C45] mx-auto mb-4" />
                                 <p className="font-medium text-sm">{item}</p>

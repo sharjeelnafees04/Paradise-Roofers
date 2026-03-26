@@ -11,7 +11,7 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    items: ["info@paradiseroofers.com"],
+    items: ["sales@Paradiseroofers.com"],
   },
   {
     icon: MapPin,
@@ -67,7 +67,7 @@ export default function Contact() {
               {/* Email */}
               <div>
                 <h3 className="text-sm font-bold uppercase tracking-widest text-[#FF9C45] mb-4">Email</h3>
-                <a href="mailto:info@paradiseroofers.com" className="text-2xl font-bold uppercase hover:text-[#FF9C45] transition-colors">info@paradiseroofers.com</a>
+                <a href="mailto:sales@Paradiseroofers.com" className="text-2xl font-bold uppercase hover:text-[#FF9C45] transition-colors">sales@Paradiseroofers.com</a>
               </div>
 
               {/* Address */}

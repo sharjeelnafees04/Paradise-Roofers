@@ -36,7 +36,7 @@ export default function MiltonSimple() {
                                 </Link>
                                 <a href="tel:+16475550123" className="w-full sm:w-auto bg-muted text-foreground px-8 py-4 font-bold uppercase tracking-wide hover:bg-muted/80 transition-colors flex items-center justify-center gap-4">
                                     <Phone className="h-5 w-5 text-[#FF9C45]" />
-                                    +1 (647) 555-0123 <ArrowRight className="h-4 w-4" />
+                                    +1 437-564-2790 <ArrowRight className="h-4 w-4" />
                                 </a>
                             </div>
                         </div>
@@ -67,7 +67,7 @@ export default function MiltonSimple() {
                                     </p>
                                 </div>
                             </div>
-                            
+
                             <ul className="space-y-3 mb-6 ml-2">
                                 <li className="flex items-center gap-2 text-sm">
                                     <div className="h-2 w-2 rounded-full bg-[#FF9C45]" />
@@ -110,7 +110,7 @@ export default function MiltonSimple() {
                                     </p>
                                 </div>
                             </div>
-                            
+
                             <ul className="space-y-3 mb-6 ml-2">
                                 <li className="flex items-center gap-2 text-sm">
                                     <div className="h-2 w-2 rounded-full bg-[#FF9C45]" />
