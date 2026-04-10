@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Linkedin, Facebook, Youtube, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import LogoBar from "@/components/sections/LogoBar";
 import workersSilhouette from "@/assets/workers-silhouette.png";
 
 const footerLinks = {
@@ -199,6 +200,9 @@ export default function Footer() {
               <p className="text-sm text-background/50 mt-1">Sun: Closed</p>
             </div>
           </div>
+
+          {/* Partner Logos Bar */}
+          <LogoBar />
         </div>
 
         {/* Giant Brand Name Watermark */}
