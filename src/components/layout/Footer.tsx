@@ -211,13 +211,13 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-background/10">
           <div className="container py-4">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-background/40">
-              <div className="flex gap-6">
-                <Link to="/privacy" className="hover:text-background transition-colors">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-background/60">
+              <div className="flex gap-6 uppercase font-bold tracking-widest text-[10px]">
+                <Link to="/privacy" className="hover:text-primary transition-colors">
                   Privacy Policy
                 </Link>
-                <Link to="/terms" className="hover:text-background transition-colors">
-                  Terms
+                <Link to="/terms" className="hover:text-primary transition-colors">
+                  Terms of Service
                 </Link>
               </div>
               <p>© {new Date().getFullYear()} Paradise Roofers. All rights reserved.</p>
