@@ -70,6 +70,9 @@ const queryClient = new QueryClient();
 import { HelmetProvider } from 'react-helmet-async';
 import RedirectHandler from './components/routing/RedirectHandler';
 
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Terms from "./pages/Terms";
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <HelmetProvider>
@@ -139,6 +142,8 @@ const App = () => (
             <Route path="/locations/ajax/renovation" element={<AjaxRenovation />} />
 
             <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<Terms />} />
 
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

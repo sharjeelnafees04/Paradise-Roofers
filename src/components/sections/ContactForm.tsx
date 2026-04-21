@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Clock } from "lucide-react";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Label } from "@/components/ui/label";
 
 interface ContactFormProps {
   variant?: "light" | "dark";
@@ -18,6 +20,7 @@ export default function ContactForm({
     email: '',
     phone: '',
     message: '',
+    smsConsent: false as boolean,
     plan: null as File | null
   });
 
@@ -27,10 +30,8 @@ export default function ContactForm({
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files && e.target.files[0]) {
-      setFormData(prev => ({ ...prev, plan: e.target.files![0] }));
-    }
+  const handleCheckboxChange = (checked: boolean) => {
+    setFormData({ ...formData, smsConsent: checked });
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -43,11 +44,9 @@ export default function ContactForm({
       data.append("email", formData.email);
       data.append("phone", formData.phone);
       data.append("message", formData.message);
+      data.append("smsConsent", formData.smsConsent ? "yes" : "no");
       data.append("website", "paradise-roofer");
-      if (formData.plan) {
-        data.append("plan", formData.plan);
-      }
-
+      
       const API_URL = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1"
         ? "http://localhost:5000/api/contact"
         : "https://constructionestimatingnewyork.com/api/contact";
@@ -62,7 +61,7 @@ export default function ContactForm({
           title: "Message Sent!",
           description: "We'll get back to you within 24 hours.",
         });
-        setFormData({ name: "", email: "", phone: "", message: "", plan: null });
+        setFormData({ name: "", email: "", phone: "", message: "", smsConsent: false, plan: null });
         (e.target as HTMLFormElement).reset();
       } else {
         toast({
@@ -153,6 +152,23 @@ export default function ContactForm({
                   required
                   className="bg-gray-100/50 border-0 focus-visible:ring-1 focus-visible:ring-[#FF9C45] rounded-none resize-none placeholder:text-muted-foreground/50 p-4"
                 />
+              </div>
+
+              <div className="flex items-start space-x-3 bg-gray-50 p-4 rounded-sm border border-gray-100">
+                <Checkbox 
+                  id="smsConsent" 
+                  checked={formData.smsConsent}
+                  onCheckedChange={handleCheckboxChange}
+                  className="mt-1"
+                />
+                <div className="grid gap-1.5 leading-none">
+                  <Label
+                    htmlFor="smsConsent"
+                    className="text-[11px] leading-relaxed text-muted-foreground font-normal cursor-pointer"
+                  >
+                    I consent to receive conversational, project updates and roofing inquiry related messages from Paradise Roofers. Reply STOP to opt-out; Reply HELP for support; Message & data rates may apply; Messaging frequency may vary. Visit our <Link to="/privacy" className="underline hover:text-primary">Privacy Policy</Link> and <Link to="/terms" className="underline hover:text-primary">Terms of Service</Link>.
+                  </Label>
+                </div>
               </div>
 
               <Button type="submit" disabled={isSubmitting} className="w-full bg-[#FF9C45] text-black hover:bg-[#ff8a22] uppercase font-bold text-sm tracking-widest py-8 rounded-none mt-4 transition-all hover:scale-[1.01]">
