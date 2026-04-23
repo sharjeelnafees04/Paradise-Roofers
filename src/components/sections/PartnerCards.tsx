@@ -15,7 +15,7 @@ const partners = [
     description: "Professional construction cost estimation services providing accurate project budgeting and comprehensive takeoff solutions for all building trades."
   },
   {
-    name: "Contractor List",
+    name: "ContractorsList",
     url: "https://staging.contractorslist.com/",
     logo: "/footerlogos/contractorL.png",
     description: "Comprehensive contractor directory platform connecting property owners with verified, licensed contractors across various construction specialties."

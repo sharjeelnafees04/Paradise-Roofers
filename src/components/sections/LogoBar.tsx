@@ -22,14 +22,14 @@ export default function LogoBar() {
   ];
 
   return (
-    <div className="py-6 overflow-hidden" style={{ backgroundColor: 'rgb(255, 156, 69)' }}>
+    <div className="py-6 overflow-hidden bg-transparent">
       <div className="flex animate-marquee whitespace-nowrap">
         {logos.concat(logos).map((logo, i) => (
           <div key={i} className="flex-shrink-0 mx-6 group">
-            <a href={logo.url} target="_blank" rel="noopener noreferrer" 
-               className="flex items-center justify-center w-32 h-24 bg-white/90 rounded-lg hover:bg-white transition-all duration-300 group-hover:scale-105 shadow-sm">
-              <img src={logo.img} alt={logo.name} 
-                   className="max-w-24 max-h-16 object-contain transition-all duration-300 group-hover:scale-110" />
+            <a href={logo.url} target="_blank" rel="noopener noreferrer"
+              className="flex items-center justify-center w-32 h-24 rounded-lg hover:bg-white transition-all duration-300 group-hover:scale-105 shadow-sm">
+              <img src={logo.img} alt={logo.name}
+                className="max-w-24 max-h-16 object-contain transition-all duration-300 group-hover:scale-110" />
             </a>
           </div>
         ))}
