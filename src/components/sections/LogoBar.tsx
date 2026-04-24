@@ -7,18 +7,7 @@ export default function LogoBar() {
     { name: "Grobots", url: "https://grobots.ai/", img: "/footerlogos/grobot.png" },
     { name: "Bitwords", url: "https://www.bitwords.com/", img: "/footerlogos/bitwords.png" },
     { name: "Rush Corporation", url: "https://rushcorporation.com/", img: "/footerlogos/rush.png" },
-    { name: "Texas", url: "https://constructionestimatingtexas.com", img: "/footerlogos/Taxes.png" },
-    { name: "New York", url: "https://constructionestimatingnewyork.com", img: "/footerlogos/newyork.png" },
-    { name: "California", url: "https://constructionestimatingcalifornia.com", img: "/footerlogos/california.png" },
-    { name: "Florida", url: "https://estimatingflorida.com", img: "/footerlogos/florida.png" },
-    { name: "Lumber", url: "https://lumberstakeoff.us", img: "/footerlogos/lumber.png" },
-    { name: "Drywall", url: "https://drywallestimating.us", img: "/footerlogos/drywall.png" },
-    { name: "Plumbing", url: "https://www.plumbingtakeoff.com", img: "/footerlogos/plumbing.png" },
-    { name: "Electrical", url: "https://electricalestimates.us", img: "/footerlogos/electrical.png" },
     { name: "MEP", url: "https://mepestimate.us", img: "/footerlogos/mep.png" },
-    { name: "USA", url: "https://usaconstructiontakeoff.com", img: "/footerlogos/usa.png" },
-    { name: "Phoenix", url: "https://phoenixestimating.com/", img: "/footerlogos/pheonix.png" },
-    { name: "Roofing", url: "https://roofingestimators.us/", img: "/footerlogos/roofing.png" }
   ];
 
   return (
