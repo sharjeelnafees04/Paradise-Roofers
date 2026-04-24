@@ -15,7 +15,7 @@ export default function TopHeader() {
 
           {/* Center Section - Phone (Orange Background) */}
           <div 
-            className="flex items-center gap-2 px-4 py-1 rounded-full font-semibold"
+            className="flex items-center gap-2 px-6 py-1 rounded-full font-semibold"
             style={{ backgroundColor: 'rgb(255, 156, 69)', color: 'rgb(0, 0, 0)' }}
           >
             <Phone className="h-4 w-8" />
