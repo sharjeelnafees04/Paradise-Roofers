@@ -60,14 +60,14 @@ export default function PartnerCards() {
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-4 mb-6">
             <div className="h-[2px] w-12 bg-primary" style={{ backgroundColor: 'rgb(255, 131, 59)' }}></div>
-            <p className="text-sm font-semibold uppercase tracking-wider">Our Droup of Companies</p>
+            <p className="text-sm font-semibold uppercase tracking-wider">Our Group of Companies</p>
             <div className="h-[2px] w-12 bg-primary" style={{ backgroundColor: 'rgb(255, 131, 59)' }}></div>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4">
             Industry Leading Companies
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            We collaborate with top-tier companies across various industries to deliver exceptional services and innovative solutions to our clients.
+            A network of specialized companies delivering excellence in construction, estimating, technology, and more. Click on any company below to explore their services and offerings.
           </p>
         </div>
 
